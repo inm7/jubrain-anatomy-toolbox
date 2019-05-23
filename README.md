@@ -10,10 +10,10 @@ The copyright and all other rights related to the hereby provided products are h
 ## References and Contact
 ### Contact
 For any questions and comments regarding the JuBrain Anatomy Toolbox please contact:
-* Prof. Simon Eickhoff, Institute for Neuroscience and Medicine - Brain and Behaviour (INM-7), FZJ (https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-7/EN/eickhoff_s.html?nn=2467646)
+* [Prof. Simon Eickhoff](https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-7/EN/eickhoff_s.html?nn=2467646), Institute for Neuroscience and Medicine - Brain and Behaviour (INM-7), FZJ 
 
 For general questions and comments regarding cytoarchitectonic mapping please contact
-* Prof. Katrin Amunts, Institute for Neuroscience and Medicine - Structural and functional organisation of the brain (INM-1), FZJ (https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Amunts_Katrin.html?nn=2467646)
+* [Prof.Katrin Amunts](https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Amunts_Katrin.html?nn=2467646), Institute for Neuroscience and Medicine - Structural and functional organisation of the brain (INM-1), FZJ 
 ### References for the JuBrain Anatomy toolbox:
 Eickhoff S, Stephan KE, Mohlberg H, Grefkes C, Fink GR, Amunts K, Zilles K: A new SPM toolbox for combining probabilistic cytoarchitectonic maps and functional imaging data. NeuroImage 25(4), 1325-1335, 2005
 
