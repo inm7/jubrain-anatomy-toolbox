@@ -119,10 +119,10 @@ Cerebellar nuclei (DDN, VDN, EN, GN, FN)
 * Tellmann et al., (2015). Front Neuroanat. 13, 9-54.
 
 
-### The SPM Anatomy toolbox also include the Cerebellar atlas by Diedrichsen
+### The JuBrain Anatomy Toolbox also include the Cerebellar atlas by Diedrichsen
 Cerebellar atlas Diedrichsen,J. et al., (2009) Neuroimage. 46(1), 39-46.
 http://www.icn.ucl.ac.uk/motorcontrol/imaging/propatlas.htm
 
-### The SPM Anatomy toolbox also include the Thalamic Connectivity atlas by Behrens
+### The JuBrain Anatomy Toolbox also include the Thalamic Connectivity atlas by Behrens
 Behrens TE et al., (2003) Nat Neurosci. 6(7):750-7.
 http://www.fmrib.ox.ac.uk/connect/
