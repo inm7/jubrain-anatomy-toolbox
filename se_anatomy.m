@@ -27,7 +27,7 @@ switch lower(action)
         try
             load(spm_select(1,'mat','Select JuBrain Data File',[],spm_str_manip(which('se_anatomy.m'),'H'),'JuBrain_Data_'));
         catch
-            load(fullfile(fileparts(which('se_anatomy.m')),'JuBrain_Data_public_v30.mat'))
+            load(fullfile(fileparts(which('se_anatomy.m')),'JuBrain_Data_v30beta.mat'))
         end
         
         JuBrain.Vo.fname = fullfile(fileparts(which('se_anatomy.m')),JuBrain.Vo.fname);
@@ -150,7 +150,7 @@ switch lower(action)
             'String','Print All Clusters','FontSize',st.FS(17),'ForegroundColor',[.6 .6 .6],'FontWeight','bold');
         
         st.tab = uicontrol(st.fig,'Style','pushbutton','units','normalized','Position',[1007+35 350 160+15 40].*st.WS,...
-            'String','Save Table','FontSize',st.FS(17),'ForegroundColor',[.6 .6 .6],'FontWeight','bold')
+            'String','Save Table','FontSize',st.FS(17),'ForegroundColor',[.6 .6 .6],'FontWeight','bold');
         
         uicontrol(st.fig,'Style','pushbutton','units','normalized','Position',[1203+35+15-30 350 160+10 40].*st.WS,...
             'String','Exit','Callback','se_anatomy(''exit'')','FontSize',st.FS(17),'ForegroundColor','k','FontWeight','bold');
@@ -326,7 +326,7 @@ switch lower(action)
                 SPM.u  = spm_input(['Height threshold (0 for none)'],'+0','r',0,1);
                 SPM.k  = spm_input(['Extent threshold (0 for none)'],'+0','r',0,1);
                 SPM.title = spm_input('Title','+1','s',spm_str_manip(SPM.Vol.fname,'rt'));
-                tmp = (spm_read_vols(SPM.Vol)*SPM.pmult); tmp = tmp.*(tmp>SPM.u); Q = find(tmp);
+                tmp = (spm_read_vols(SPM.Vol)*SPM.pmult); tmp(isnan(tmp)) = 0; tmp = tmp.*(tmp>SPM.u); Q = find(tmp);
                 SPM.Z = tmp(Q); [SPM.XYZ(:,1) SPM.XYZ(:,2) SPM.XYZ(:,3)] = ind2sub(SPM.Vol.dim,Q);
                 
                 A = spm_clusters(SPM.XYZ'); [n x] = hist(A,1:max(A)); Q = ismember(A,x(n>=SPM.k)); SPM.XYZ = SPM.XYZ(Q,:)'; SPM.Z = SPM.Z(Q);

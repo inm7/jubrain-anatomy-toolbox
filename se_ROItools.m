@@ -24,7 +24,7 @@ switch lower(action)
         try
             load(spm_select(1,'mat','Select JuBrain Data File',[],spm_str_manip(which('se_anatomy.m'),'H'),'JuBrain_Data_'));
         catch
-            load(fullfile(fileparts(which('se_anatomy.m')),'JuBrain_Data_public_v30.mat'))
+            load(fullfile(fileparts(which('se_anatomy.m')),'JuBrain_Data_v30beta.mat'))
         end
         
         FS = [1:36]+1; PF = spm_platform('fonts'); S0 = get(0,'ScreenSize'); WS = [1 1 S0(3:4)./[1680 1050]];
